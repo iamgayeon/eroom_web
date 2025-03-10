@@ -1,20 +1,48 @@
 <script setup>
 import config from '@/config';
 </script>
+
 <template>
-  <div class="jumbotron p-5 bg-primary text-white">
-    <h1>{{ config.title }}</h1>
-    <p>{{ config.subtitle }}</p>
+  <div class="banner-wrapper">
+    <div class="top-banner">지금 가입하고 프리미엄 기능을 <span class="highlight">무료 체험</span> 해보세요!</div>
   </div>
 </template>
+
+<style>
+/* 전역 스타일 리셋 */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+</style>
+
 <style scoped>
-.jumbotron {
-  background-image: url('@/assets/images/background.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.banner-wrapper {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.top-banner {
+  background: #FF8538;
   color: white;
-  padding: 2rem;
-  margin-top: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  width: 100%;
+  margin: 0;
+}
+
+.highlight {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
 }
 </style>

@@ -1,12 +1,15 @@
 <script setup>
 import MenuItem from './MenuItem.vue';
+
 const props = defineProps({
-  menus: { Type: Array, required: true },
+  menus: { type: Array, required: true }, // type 오타 수정
 });
 </script>
 
 <template>
   <ul class="navbar-nav">
-    <MenuItem v-for="menu in menus" :menu="menu" />
+    <li v-for="menu in menus" :key="menu.title" class="nav-item">
+      <MenuItem :menu="menu" />
+    </li>
   </ul>
 </template>

@@ -1,21 +1,17 @@
 export default {
-  title: 'KB Fullstack',
-  subtitle: '(Vue+Spring)',
+  title: 'E-ROOM',
   menus: [
     {
-      title: '게시판',
+      title: '홈',
       url: '/board/list',
-      icon: 'fa-solid fa-paste',
     },
     {
-      title: '여행',
+      title: '이용안내',
       url: '/travel/list',
-      icon: 'fa-solid fa-plane-departure',
     },
     {
-      title: '갤러리',
+      title: '고객지원',
       url: '/gallery/list',
-      icon: 'fa-regular fa-images',
     },
   ],
 
@@ -28,7 +24,7 @@ export default {
 
     join: {
       url: '/auth/join',
-      title: '회원가입',
+      title: '시작하기',
       icon: 'fa-solid fa-user-plus',
     },
   },
